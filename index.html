@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Roll 'em!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="DiceGame.js"></script>
+</head>
+<body>
+    <p class="header">
+        <span class="title">WELCOME TO THE TABLE</span><br>
+        <i>You get three rolls, get the dice to roll a straight and you win.</i>
+    </p>
+    <form action="#" class="topButtons">
+        <input id="playButton" type="button" value="Play">
+        <input id="rollButton" type="button" value="Roll" disabled>
+    </form>
+    <div id="messages"></div>
+    <div id="gameOverMessage"></div>
+    <div id="tenorGif" class="tenor-gif-embed" data-postid="13865860" data-share-method="host" data-aspect-ratio="0.94" data-width="30%" >
+      <a href="https://tenor.com/view/dice-wind-mill-dice-dancer-dancing-cool-dice-chris-timmons-gif-13865860">Dice Wind Mill Dice Dancer GIF</a>from <a href="https://tenor.com/search/dice+wind+mill-gifs">Dice Wind Mill GIFs</a>
+  </div>
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <div id="dieContainer">
+        <p>
+            <img id="die1" src="blank.png" alt="1 die">
+            <img id="die2" src="blank.png" alt="2 die">
+            <img id="die3" src="blank.png" alt="3 die">
+            <img id="die4" src="blank.png" alt="4 die">
+            <img id="die5" src="blank.png" alt="5 die">
+        </p>
+    </div>
+    <div id="keeperContainer">
+        <form action="#">
+            <input id="keeper1" type="button" value="keep?">
+            <input id="keeper2" type="button" value="keep?">
+            <input id="keeper3" type="button" value="keep?">
+            <input id="keeper4" type="button" value="keep?">
+            <input id="keeper5" type="button" value="keep?">
+        </form>
+        <br><br>
+        <div>Click the "keep" button in order to keep a specific dice before re-rolling</div>
+    </div>
+</body>
+</html>
