@@ -149,13 +149,14 @@ function setupGame() {
 
 function toggleAudio() {
     var audio = document.querySelector('audio');
-    var popup = document.getElementById('myPopup');
+    var muteIcon = document.getElementById('muteIcon');
+    
     if (audio.paused) {
         audio.play();
-        popup.classList.add('show');
+        muteIcon.src = 'music.png';
     } else {
         audio.pause();
-        popup.classList.remove('show');
+        muteIcon.src = 'sound.png';
     }
 }
 
