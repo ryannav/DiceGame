@@ -12,6 +12,7 @@ function startGame() {
     document.getElementById("gameOverMessage").innerText = "";
     document.getElementById("messages").innerText = "";
     for (var i = 0; i < keeperButtons.length; ++i) {
+        keeperButtons[i].style.visibility = 'visible';
         keeperButtons[i].disabled = false;
         keeperButtons[i].value = "keep?";
     }
@@ -103,10 +104,13 @@ function showDice() {
 
 // Function to set the image of a dice
 function setImage(dieImages, dieValue) {
-    if (isFinite(dieValue))
-        dieImages.src = "die" + dieValue + ".png";
-    else
-        dieImages.src = "blank.png";
+    dieImages.src = "diceroll.gif"
+    setTimeout(function() {
+        if (isFinite(dieValue))
+            dieImages.src = "die" + dieValue + ".png";
+        else
+            dieImages.src = "blank.png";
+    }, 1000);
 }
 
 // Function to update the keeper buttons
@@ -114,6 +118,7 @@ function updateKeeper() {
     if (rollCount >= 1) {
         this.disabled = true;
         this.value = "keeper";
+        this.style.visibility = 'hidden';
     }
 }
 
@@ -137,7 +142,7 @@ function setupGame() {
 
     for (var i = 0; i < numDice; ++i) {
         keeperButtons[i] = document.getElementById("keeper" + (i + 1));
-        keeperButtons[i].disabled = true; // Disable the keeper buttons initially
+        keeperButtons[i].disabled = true;
         keeperButtons[i].addEventListener("click", updateKeeper);
     }
 }
