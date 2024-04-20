@@ -147,5 +147,17 @@ function setupGame() {
     }
 }
 
+function toggleAudio() {
+    var audio = document.querySelector('audio');
+    var popup = document.getElementById('myPopup');
+    if (audio.paused) {
+        audio.play();
+        popup.classList.add('show');
+    } else {
+        audio.pause();
+        popup.classList.remove('show');
+    }
+}
+
 // Event listener to start the game when the window loads
 window.addEventListener("load", setupGame, false);

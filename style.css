@@ -90,6 +90,8 @@ input:hover:not(:disabled) {
 
 input:disabled {
     cursor: auto;
+    color: #000000;
+    background-color: #4169E1;
 }
 
 input:active:after {
@@ -115,6 +117,13 @@ input:active {
     margin-right: auto;
 }
 
+.popuptext {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 1px;
+}
+
 #gameOverMessage {
     color: red;
     font-size: 1.5em;
@@ -131,3 +140,10 @@ input:active {
 #keeperContainer {
     display: none;
 }
+
+#muteIcon{
+    margin-left: 75%;
+    width: 4em;
+    margin-bottom: -3%;
+}
+
