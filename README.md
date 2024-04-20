@@ -19,3 +19,4 @@ This is a simple dice game implemented in HTML, CSS, and JavaScript. The game al
 ## How to Run
 
 To run the game, simply open the `DiceGame.html` file in a web browser.
+or follow the link [ryannav.github.io/DiceGame/](https://ryannav.github.io/DiceGame/)
