@@ -4,6 +4,13 @@ body {
     text-align: center;
     background-color: #4169E1;
     color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    font-size: .5em;
+    padding: 1em 0;
 }
 
 img {
@@ -118,10 +125,9 @@ input:active {
 }
 
 .popuptext {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 1px;
+    margin-left: 80%;
+    width: 4em;
+    margin-bottom: -2%;
 }
 
 #gameOverMessage {
